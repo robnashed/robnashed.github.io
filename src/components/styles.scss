@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//colors
+$background-gradient: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+$purple: #302b63;
+$darkpurple: #24243e;
+$obsidian: #0f0c29;
+$highlight: rgb(138, 19, 138);
+
+$white-gradient: linear-gradient(to right, #CFDEF3, #E0EAFC);
+$cherryblossom: linear-gradient(to left, #fbd3e9, #c4709d); 
+$blue-green: linear-gradient(to right, #2bc0e4, #eaecc6); 
+
+
+.white{
+    background: $white-gradient;
+}
+
+.cherry{
+    background: $cherryblossom;
+}
+
+.blueGreen{
+    background: $blue-green;
+}
+body{
+    margin: 0;
+    font-family: 'Jost';
+    background: $obsidian;
+    background: $background-gradient;
+    
+}
+.header{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+.logo{
+    font-size: 70px;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 40px;
+    color: $purple;
+}
+.nav{
+    display: inline-block;
+    margin-left: 20px;
+}
+.navLink{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navLink a{
+    text-decoration: none;
+    color: black;
+}
+
+.navLink a:hover{
+    color: $highlight;
+}
+
+.headerWrapper{
+    margin-left: 40px;
+    color: white;
+    
+}
+.headerTitle{
+    font-size: 70px;
+    line-height: 1;
+}
+.headerDesc{
+    font-weight: 200;
+    font-size: 26px;
+    margin-top: -40px;
+    padding-left: 3px;
+}
+.compWrapper{
+     margin-top: 80px;
+}
+
+#card{
+    margin-left: 40px;
+    display: inline-block;
+    position: relative;
+    width: 220px;
+    height: 140px; 
+    
+    border-radius: 20px;
+    border: $darkpurple 1px solid;
+}
+
+#card .cardText{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: .5s;
+    color: $darkpurple;
+    
+}
+
+#card:hover{
+    // cursor: pointer;
+    background: none;
+    border: white 1px solid;
+   
+}
+
+#card:hover .cardText{
+    color: white;
+}
+
+.compDetails{
+    margin-left: 40px;
+
+    border-radius: 20px;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0,0,0,.5);
+
+}
+
+.compDetails pre{
+    margin-left: 40px;
+    color: white;
+    max-width: 300px;
+}
+.compDetails pre code{
+    width: 300px;
+}
+.back-button{
+    color: white;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.back-button:hover{
+    color: $highlight;
+}
